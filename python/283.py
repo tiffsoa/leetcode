@@ -9,8 +9,6 @@ class Solution(object):
 
         while r < len(nums):
             if nums[r] != 0:
-                temp = nums[l]
-                nums[l] = nums[r]
-                nums[r] = temp
+                nums[l], nums[r] = nums[r], nums[l]
                 l += 1
-            r += 1    
+            r += 1  

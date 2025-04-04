@@ -19,17 +19,17 @@ def sockMerchant(n, ar):
     # Write your code here
     pairs = {}
     count = 0
-    
+
     for color in ar:
         if color in pairs:
             pairs[color] += 1
         else:
             pairs[color] = 1
-    
+
     for color in pairs:
         count += pairs[color] // 2
-        
-    return count              
+
+    return count
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
